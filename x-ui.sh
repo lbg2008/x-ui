@@ -25,7 +25,7 @@ if [[ -f /etc/redhat-release ]]; then
     release="centos"
 elif cat /etc/issue | grep -Eqi "debian"; then
     release="debian"
-elif cat /etc/issue | grep -Eqi "ubuntu"; then
+elif cat /etc/issue | grep -Eqi "ubuntu|lunar"; then
     release="ubuntu"
 elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
     release="centos"

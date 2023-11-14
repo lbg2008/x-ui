@@ -19,9 +19,9 @@ elif cat /etc/issue | grep -Eqi "ubuntu|lunar|jammy"; then
     release="ubuntu"
 elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
-elif cat /proc/version | grep -Eqi "debian"; then
+elif cat /proc/version | grep -Eqi "debian|bookworm"; then
     release="debian"
-elif cat /proc/version | grep -Eqi "ubuntu"; then
+elif cat /proc/version | grep -Eqi "ubuntu|lunar|jammy"; then
     release="ubuntu"
 elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
     release="centos"

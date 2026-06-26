@@ -13,15 +13,13 @@ cur_dir=$(pwd)
 # check os
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
-elif cat /etc/issue | grep -Eqi "debian|bookworm"; then
+elif cat /etc/issue | grep -Eqi "debian|bookworm|armbian|trixie"; then
     release="debian"
 elif cat /etc/issue | grep -Eqi "ubuntu|lunar|jammy"; then
     release="ubuntu"
 elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
-elif cat /proc/version | grep -Eqi "ophub"; then
-    release="debian"
-elif cat /proc/version | grep -Eqi "debian|bookworm"; then
+elif cat /proc/version | grep -Eqi "debian|bookworm|armbian|trixie"; then
     release="debian"
 elif cat /proc/version | grep -Eqi "ubuntu|lunar|jammy"; then
     release="ubuntu"
